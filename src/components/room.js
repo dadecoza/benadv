@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 function Room({ props }) {
     const [message, setMessage] = useState("");
     const [action, setAction] = useState("");
-    const [itemButtons, setItemButtons] = useState("");
+    const [itemButtons, setItemButtons] = useState([]);
 
     const game = new Game(props.gameData);
     const room = game.getRoom();
