@@ -143,14 +143,14 @@ class Game {
                 }
                 break;
             case 5:
-                if (this.carrying("vines")) {
-                    actions.push({ action: "get", target: "vines", key: key++ });
-                }
                 if (state.vine === 0) {
+                    actions.push({ action: "get", target: "vines", key: key++ });
                     actions.push({ action: "examine", target: "vines", key: key++ });
                     if (this.carrying("knife")) {
                         actions.push({ action: "cut", target: "vines", key: key++ });
                     }
+                } else if (this.carrying("vines")) {
+                    actions.push({ action: "get", target: "vines", key: key++ });
                 }
                 break;
             case 6:
