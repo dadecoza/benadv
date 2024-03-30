@@ -271,7 +271,6 @@ class Game {
         return actions;
     }
 
-
     getGroupedActions() {
         var grouped = {};
         const actions = this.getActions();
@@ -287,7 +286,6 @@ class Game {
         }
         return grouped;
     }
-
 
     getRoom() {
         const roomId = this.gameData.roomId;

@@ -62,7 +62,8 @@ function Header({ props }) {
     const about = `
     ADVENTURE ISLAND REBIRTH: RISE OF DAWN<br/><br/>
     Original Atari 800 Version by Ben Heck (1988-2024)<br/></br>
-    Crudely Ported to JavaScript by Johannes le Roux (2024)
+    Crudely Ported to JavaScript by Johannes le Roux (2024)<br/></br>
+    <a href="https://github.com/dadecoza/benadv" target="_blank">GitHub</a>
     `;
     const close = () => {
         setShow(false);
