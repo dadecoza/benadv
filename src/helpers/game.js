@@ -70,7 +70,7 @@ class Game {
             things.push(<img src={boulder} key={key++} className="Boulder" alt="boulder"></img>);
         }
         if (roomId === 13 && states.lever === 1) {
-            things.push(<img src={panel} key={key++} className="Panel" alt="panel"></img>); 
+            things.push(<img src={panel} key={key++} className="Panel" alt="panel"></img>);
         }
         if (roomId === 30 && states.cart < 2) {
             things.push(<img src={cart} key={key++} className="Cart" alt="cart"></img>);
@@ -143,6 +143,9 @@ class Game {
                 }
                 break;
             case 5:
+                if (this.carrying("vines")) {
+                    actions.push({ action: "get", target: "vines", key: key++ });
+                }
                 if (state.vine === 0) {
                     actions.push({ action: "examine", target: "vines", key: key++ });
                     if (this.carrying("knife")) {
@@ -220,7 +223,7 @@ class Game {
                 if (state.cart === 0) {
                     actions.push({ action: "examine", target: "cart", key: key++ });
                 }
-                if (state.greasecart === 1 && this.carrying("grease")) {
+                if (state.greasecart === 1) {
                     actions.push({ action: "put", target: "grease on wheels", key: key++ });
                 }
                 if (state.cart < 2) {
@@ -532,7 +535,21 @@ class Game {
     }
 
     take(target) {
-        this.setItemRoom(target, 0);
+        const state = this.gameData.states;
+        switch (target) {
+            case "vines":
+                if (state.vine === 0) {
+                    this.setMessage("They're firmly attached. You need to cut them loose");
+                } else if (this.carrying("vines")) {
+                    this.setMessage("You've already contributed to the defoliation of this rainforest");
+                } else {
+                    this.setItemRoom(target, 0);
+                }
+                break;
+            default:
+                this.setItemRoom(target, 0);
+        }
+
     }
 
     drop(target) {
@@ -636,21 +653,25 @@ class Game {
                 break;
             case "grease":
                 if (roomId === 30) {
-                    this.setMessage("You grease up the cart's wheels, you should be able to push or pull it now");
-                    this.setState("cart", 1);
-                    this.setItemRoom("grease", 99);
+                    if (this.carrying("grease")) {
+                        this.setMessage("You grease up the cart's wheels, you should be able to push or pull it now");
+                        this.setState("cart", 1);
+                        this.setItemRoom("grease", 99);
+                    } else {
+                        this.setMessage("You don't have any grease, and what's in your hair doesn't count");
+                    }
                 }
                 break;
             case "lever":
                 this.setMessage("The lever causes the panel to slide open, revealing an eastern passage");
                 this.setItemRoom("lever", 99);
-                this.setState("lever",1);
+                this.setState("lever", 1);
                 break;
             case "oars":
-                if (state.oars === 0 ) {
+                if (state.oars === 0) {
                     this.setMessage("You install the oars on the boat, you can now row north");
                     this.setItemRoom("oars", 99);
-                    this.setState("oars",1);
+                    this.setState("oars", 1);
                 } else {
                     this.setMessage("They're already installed. Go north, young man");
                 }
