@@ -1,0 +1,25 @@
+.Header {
+    display: flex;
+    font-size: small;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.About {
+    float: right;
+    margin-left: auto;
+}
+
+.About:hover {
+    color: #808080;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (pointer:coarse) {
+    .About, .About:hover {
+        color: white;
+    }
+}

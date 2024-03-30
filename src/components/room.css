@@ -1,0 +1,162 @@
+.Room {
+    width: 100%;
+}
+
+.Controls {
+    background-color: black;
+    padding: 6px;
+    border-radius: 5px;
+    position: sticky;
+    bottom: 0px;
+}
+
+.ControlTitle {
+    font-size: 12px;
+    color: #F5F5F5;
+}
+
+.Room-image {
+    margin: 10px auto 15px auto;
+    width: 380px;
+    height: 380px;
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.Stump {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 120px;
+    width: 240px;
+}
+
+.Matches {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 170px;
+}
+
+.Dynamite {
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 170px;
+}
+
+.Knife {
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 100px;
+}
+
+.Vines {
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 100px;
+}
+
+.Grease {
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 100px;
+}
+
+.Fire {
+    position: absolute;
+    margin-top: 203px;
+    margin-left: 275px;
+}
+
+.Boulder {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 120px;
+    height: 140px;
+}
+
+.Cart {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 105px;
+    height: 140px;
+}
+
+.CartNorth {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 105px;
+    height: 140px;
+}
+
+.Hole {
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 145px;
+}
+
+.Oars {
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 130px;
+}
+
+.Rip {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 160px;
+}
+
+.Lever {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 60px; 
+}
+
+.Panel {
+    position: absolute;
+    margin-top: 152px;
+    margin-left: 185px;
+    width: 150px; 
+}
+
+.Oar {
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 280px;
+}
+
+
+.ButtonContainer {
+    width: 100%;
+    background-color: black;        
+    color: white;
+    display: block;
+    margin-top: 0px;
+}
+
+.DirectionContainer {
+    background-color: black;        
+    color: white;
+    text-align: left;
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.Description {
+    width: 100%;
+    margin: 2px 10px 10px 10px;
+    text-align: left;
+    font-size: medium;
+    display: block;
+    height: 100px;
+}
+
+.Craiyon {
+    height: 30px;
+    width: 30px;
+    margin-top: 335px;
+    margin-left: 335px;
+    position:fixed;
+    z-index: 1;
+}

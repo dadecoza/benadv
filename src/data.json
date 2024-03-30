@@ -1,0 +1,845 @@
+{
+    "rooms": [
+        {
+            "id": 1,
+            "description": "You find yourself shipwrecked on the shores of a desolate island",
+            "state": [
+                {
+                    "text": "The sea is vast",
+                    "rooms": [
+                        2,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "description": "You are further up shore",
+            "state": [
+                {
+                    "text": "The sand glitters in the sunlight",
+                    "rooms": [
+                        3,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "description": "You are on a path",
+            "state": [
+                {
+                    "text": "To the east you hear the animalistic sounds of a jungle",
+                    "rooms": [
+                        0,
+                        4,
+                        2,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "description": "You are at the edge of a jungle",
+            "state": [
+                {
+                    "text": "A fallen, dried-up tree blocks the east path",
+                    "rooms": [
+                        6,
+                        0,
+                        0,
+                        3,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "text": "A path leads east.",
+                    "rooms": [
+                        6,
+                        5,
+                        0,
+                        3,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "description": "You are inside the steamy jungle",
+            "state": [
+                {
+                    "text": "Vines hang from the canopy",
+                    "rooms": [
+                        7,
+                        0,
+                        0,
+                        4,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "text": "Some of the vines have been cut down",
+                    "rooms": [
+                        7,
+                        0,
+                        0,
+                        4,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "description": "You are in an old lean-to",
+            "state": [
+                {
+                    "text": "The boards are loose",
+                    "rooms": [
+                        0,
+                        0,
+                        4,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "text": "The boards lay in splinters on the foor",
+                    "rooms": [
+                        0,
+                        0,
+                        4,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "description": "You are at a wall",
+            "state": [
+                {
+                    "text": "It appears man-made",
+                    "rooms": [
+                        0,
+                        0,
+                        5,
+                        0,
+                        0,
+                        26
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "description": "You are at the north side of the wall",
+            "state": [
+                {
+                    "text": "You hear sounds of the ocean to the east",
+                    "rooms": [
+                        9,
+                        19,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "description": "You are in a swamp",
+            "state": [
+                {
+                    "text": "The smell is eternal",
+                    "rooms": [
+                        10,
+                        0,
+                        8,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "description": "You are on a path",
+            "state": [
+                {
+                    "text": "Vines lead down into a hole",
+                    "rooms": [
+                        0,
+                        0,
+                        9,
+                        11,
+                        0,
+                        15
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "description": "You are at the base of an inactive volcano",
+            "state": [
+                {
+                    "text": "A boulder blocks a tunnel",
+                    "rooms": [
+                        12,
+                        10,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "text": "A tunnel leads west into it",
+                    "rooms": [
+                        12,
+                        10,
+                        0,
+                        29,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "description": "You are at the north side of the volcano",
+            "state": [
+                {
+                    "text": "A passage leads down",
+                    "rooms": [
+                        0,
+                        0,
+                        11,
+                        0,
+                        0,
+                        13
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "description": "You are in a chamber filled with strange machinery",
+            "state": [
+                {
+                    "text": "There is a closed panel here, with a rusty hole next to it",
+                    "rooms": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        12,
+                        0
+                    ]
+                },
+                {
+                    "text": "The open panel reveals a passage to the east",
+                    "rooms": [
+                        0,
+                        14,
+                        0,
+                        0,
+                        12,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "description": "You are in a tunnel leading outside",
+            "state": [
+                {
+                    "text": "The sun shines from the north",
+                    "rooms": [
+                        37,
+                        0,
+                        0,
+                        13,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "description": "You are at a dead end, with an opening above you",
+            "state": [
+                {
+                    "text": "It is too far up to reach, but there is a hook near it",
+                    "rooms": [
+                        0,
+                        0,
+                        17,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "text": "Vines hanging from the hook provide a path up",
+                    "rooms": [
+                        0,
+                        0,
+                        17,
+                        0,
+                        10,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "description": "You are in a curve in the passage",
+            "state": [
+                {
+                    "text": " ",
+                    "rooms": [
+                        0,
+                        17,
+                        18,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "description": "You are in an old underground crypt",
+            "state": [
+                {
+                    "text": "A decayed human is laying on the ground",
+                    "rooms": [
+                        15,
+                        0,
+                        0,
+                        16,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "description": "You are under the wall's foundation",
+            "state": [
+                {
+                    "text": "You see some light to the north",
+                    "rooms": [
+                        16,
+                        0,
+                        26,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "description": "You are on a path next to the north side of the wall",
+            "state": [
+                {
+                    "text": " ",
+                    "rooms": [
+                        0,
+                        20,
+                        0,
+                        8,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "description": "You are on a path leading to the ocean",
+            "state": [
+                {
+                    "text": "The wall finally ends here",
+                    "rooms": [
+                        0,
+                        0,
+                        21,
+                        19,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "description": "You are on the eastern shore",
+            "state": [
+                {
+                    "text": "A bloated whale corpse lays in the sun",
+                    "rooms": [
+                        20,
+                        22,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "text": "Someone has harvested the whale for grease. How barbaric",
+                    "rooms": [
+                        20,
+                        22,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "description": "You are at the bottom of a hill",
+            "state": [
+                {
+                    "text": "You see a building at the top of it",
+                    "rooms": [
+                        23,
+                        0,
+                        0,
+                        21,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "description": "You are outside a two-story hut",
+            "state": [
+                {
+                    "text": "It looks ready to collapse",
+                    "rooms": [
+                        24,
+                        0,
+                        22,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "description": "You are inside the old, smelly hut",
+            "state": [
+                {
+                    "text": "There's a pottery kiln here, with dry firewood in it",
+                    "rooms": [
+                        0,
+                        0,
+                        23,
+                        0,
+                        25,
+                        0
+                    ]
+                },
+                {
+                    "text": "The pottery kiln is active",
+                    "rooms": [
+                        0,
+                        0,
+                        23,
+                        0,
+                        25,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "description": "You climb the ladder, and the entire hut collapses around you!",
+            "state": [
+                {
+                    "text": " ",
+                    "rooms": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "description": "You are in a cave system under the jungle",
+            "state": [
+                {
+                    "text": "Water drips all around you",
+                    "rooms": [
+                        18,
+                        0,
+                        27,
+                        0,
+                        7,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "description": "You are on a path underground",
+            "state": [
+                {
+                    "text": "You hear dripping water to the south",
+                    "rooms": [
+                        26,
+                        0,
+                        28,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "description": "You are in a small recess in the ground",
+            "state": [
+                {
+                    "text": "A plug is on the ceiling",
+                    "rooms": [
+                        27,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "description": "You are in a mining tunnel inside the volcano",
+            "state": [
+                {
+                    "text": "Looks like it hasn't been used in a century",
+                    "rooms": [
+                        0,
+                        11,
+                        0,
+                        32,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "description": "You are at a dead-end in the south tunnel. A strange hole is above you",
+            "state": [
+                {
+                    "text": "An old mining cart is here",
+                    "rooms": [
+                        32,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "text": "With the cart gone, a hole under the track is revealed",
+                    "rooms": [
+                        32,
+                        0,
+                        0,
+                        0,
+                        0,
+                        31
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 31,
+            "description": "You are in a dark, damp hole",
+            "state": [
+                {
+                    "text": "You are likely to be eaten by a grue",
+                    "rooms": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        30,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 32,
+            "description": "You are in a sharp turn of the corridor. Mine cart tracks lead south",
+            "state": [
+                {
+                    "text": "A path leads up, but it is beyond your reach",
+                    "rooms": [
+                        0,
+                        29,
+                        30,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "text": "The mining cart is here, you could stand on it to proceed up",
+                    "rooms": [
+                        0,
+                        29,
+                        30,
+                        0,
+                        33,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 33,
+            "description": "You are on a musty platform",
+            "state": [
+                {
+                    "text": "A piece of thick canvas blocks the upper exit",
+                    "rooms": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        32
+                    ]
+                },
+                {
+                    "text": "The canvas is ripped open enough for you to crawl past",
+                    "rooms": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        34,
+                        32
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "description": "You are in the huge hollow in the volcano",
+            "state": [
+                {
+                    "text": "A crumbling path leads precariously west",
+                    "rooms": [
+                        0,
+                        0,
+                        0,
+                        35,
+                        0,
+                        33
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "description": "You are on a cliff outside the volcano",
+            "state": [
+                {
+                    "text": "It is a LONG WAY DOWN!",
+                    "rooms": [
+                        0,
+                        34,
+                        36,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 36,
+            "description": "You are in a hollowed-out room off the edge of the cliff",
+            "state": [
+                {
+                    "text": "A cord dangles from the ceiling. There is a lever on the ground",
+                    "rooms": [
+                        35,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "text": "A cord dangles from the ceiling.",
+                    "rooms": [
+                        35,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 37,
+            "description": "You're on the north shore of the island",
+            "state": [
+                {
+                    "text": "There's a small boat here, but it has no oars",
+                    "rooms": [
+                        0,
+                        0,
+                        14,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "text": "The boat has oars, allowing an escape north",
+                    "rooms": [
+                        38,
+                        0,
+                        14,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 38,
+            "description": "You row the boat out to sea and...",
+            "state": [
+                {
+                    "text": " ",
+                    "rooms": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        }
+    ],
+    "items": [
+        {
+            "name": "matches",
+            "roomId": 99
+        },
+        {
+            "name": "lever",
+            "roomId": 36
+        },
+        {
+            "name": "dynamite",
+            "roomId": 27
+        },
+        {
+            "name": "knife",
+            "roomId": 99
+        },
+        {
+            "name": "oars",
+            "roomId": 31
+        },
+        {
+            "name": "vines",
+            "roomId": 99
+        },
+        {
+            "name": "grease",
+            "roomId": 99
+        }
+    ],
+    "states": {
+        "tree": 0,
+        "boulder": 0,
+        "canvas": 0,
+        "lever": 0,
+        "matches": 4,
+        "oars": 0,
+        "wetbomb": 1,
+        "kiln": 0,
+        "boards": 0,
+        "pullboards": 0,
+        "chute": 0,
+        "vine": 0,
+        "vinehook": 0,
+        "whale": 0,
+        "cart": 0,
+        "greasecart": 0,
+        "gameover": 0,
+        "restart": 0
+    },
+    "roomId": 1,
+    "dialogMessage": ""
+}

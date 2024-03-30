@@ -1,0 +1,40 @@
+.button {
+    background-color: black;
+    color: white;
+    padding: 4px;
+    font-family: "Sierra";
+    cursor: pointer;
+    border: 0px;
+    font-size: 14px;
+}
+
+.button:hover {
+    color: #808080;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.back {
+    background-color: black;
+    color: #E1C16E;
+    padding: 4px;
+    font-family: "Sierra";
+    cursor: pointer;
+    border: 0px;
+    font-size: 14px;
+}
+
+.back:hover {
+    color: #FFBF00;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (pointer:coarse) {
+    .back, .back:hover {
+        color: #E1C16E;
+    }
+    .button, .button:hover {
+        color: white;
+    }
+}
