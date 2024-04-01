@@ -14,6 +14,7 @@ function Room({ props }) {
     const groupedActions = game.getGroupedActions();
     const gameover = props.gameData.states.gameover;
     const roomText = room.text;
+    const roomItems = room.items;
     const moveRoom = (roomId) => {
         props.setGameData(game.setRoom(roomId));
         setAction("");
@@ -78,6 +79,9 @@ function Room({ props }) {
             <div className='Description'>
                 <div>{room.description}</div>
                 <div style={{ marginTop: "10px" }}>{roomText}</div>
+                {(roomItems.length > 0) &&
+                    <div style={{ marginTop: "10px" }}>You see: {roomItems}</div>
+                }
             </div>
             <div className='Controls'>
                 {(gameover === 0) &&

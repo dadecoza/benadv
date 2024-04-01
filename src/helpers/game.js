@@ -32,7 +32,6 @@ class Game {
         if (roomId === 30) { return (state.cart < 2) ? 0 : 1 }
         if (roomId === 32) { return (state.cart === 2) ? 1 : 0 }
         if (roomId === 33) { return state.canvas }
-        if (roomId === 36) { return (this.getItemRoom("lever") === roomId) ? 0 : 1 }
         if (roomId === 37) { return state.oars }
         return 0;
     }
@@ -293,7 +292,16 @@ class Game {
     getRoom() {
         const roomId = this.gameData.roomId;
         const rooms = this.gameData.rooms;
-        for (var i = 0; i < rooms.length; i++) {
+        const items = this.gameData.items;
+        var roomItems = [];
+        var i;
+        for (i = 0; i < items.length; i++) {
+            const item = items[i];
+            if (item.roomId === roomId) {
+                roomItems.push(item.name);
+            }
+        }
+        for (i = 0; i < rooms.length; i++) {
             const room = rooms[i];
             const currentRoomId = room.id;
             if (currentRoomId === roomId) {
@@ -304,14 +312,14 @@ class Game {
                     roomId: roomId,
                     description: room.description,
                     text: state.text,
-                    directions: directions
+                    directions: directions,
+                    items: roomItems.join()
                 }
             }
         }
     }
 
     setRoom(roomId) {
-        this.setMessage("");
         this.setMessage("");
         this.gameData.roomId = roomId;
         if (roomId === 25) { this.died() }
@@ -346,6 +354,11 @@ class Game {
         return holding;
     }
 
+    carry(item) {
+        this.setItemRoom(item, 0);
+        this.setMessage("Taken")
+    }
+
     getItemRoom(item) {
         const items = this.gameData.items;
         for (var i = 0; i < items.length; i++) {
@@ -360,10 +373,6 @@ class Game {
 
     setState(state, value) {
         this.gameData.states[state] = value;
-    }
-
-    setInfo(text) {
-        this.gameData.infoLine = text;
     }
 
     examine(target) {
@@ -543,11 +552,11 @@ class Game {
                 } else if (this.carrying("vines")) {
                     this.setMessage("You've already contributed to the defoliation of this rainforest");
                 } else {
-                    this.setItemRoom(target, 0);
+                    this.carry(target)
                 }
                 break;
             default:
-                this.setItemRoom(target, 0);
+                this.carry(target);
         }
 
     }
