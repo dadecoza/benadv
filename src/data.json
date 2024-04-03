@@ -721,17 +721,6 @@
             "description": "You are in a hollowed-out room off the edge of the cliff",
             "state": [
                 {
-                    "text": "A cord dangles from the ceiling. There is a lever on the ground",
-                    "rooms": [
-                        35,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
                     "text": "A cord dangles from the ceiling.",
                     "rooms": [
                         35,
